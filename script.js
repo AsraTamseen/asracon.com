@@ -16,20 +16,7 @@ $(document).ready(function(){
       $('.top').hide();
     }
 
-    $('a[href*="#"]').on('click',function(e){
-
-    e.preventDefault();
-
-    $('html, body').animate({
-
-      scrollTop : $($(this).attr('href')).offset().top,
-
-    },
-      500, 
-      'linear'
-    );
-
-  });
+   
     
   });
 
@@ -48,16 +35,7 @@ var config = {
   colorVariation: 50
 };
 
-// Colors
-var colorPalette = {
-    bg: {r:12,g:9,b:29},
-    matter: [
-      {r:36,g:18,b:42}, // darkPRPL
-      {r:78,g:36,b:42}, // rockDust
-      {r:252,g:178,b:96}, // solorFlare
-      {r:253,g:238,b:152} // totesASun
-    ]
-};
+
 
 // Some Variables hanging out
 var particles = [],
